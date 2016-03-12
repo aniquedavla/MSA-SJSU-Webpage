@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MSA-SJSU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstra/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage"> <img src="msaPerfectLogo.jpg" alt="MSA-LOGO"width="100" height="25"><!-- <h3>MSA-SJSU</h3> --></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#more">MORE
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#Mercahandise">Merchandise</a></li>
+                <li><a href="#Extras">Extras</a></li>
+                <li><a href="#Media">Media</a></li> 
+              </ul>h
+            </li>
+            <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/rose.jpeg" alt="New York">
+      </div>
+
+      <div class="item">
+      <img src="images/ahmed.jpg" alt="Chicago">
+      </div>
+
+      <div class="item">
+        <img src="images/rose.jpeg" alt="Los Angeles">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+<!-- 
+Container -->
+  <div class="bg-1">
+    <div id="home" class="container text-center">
+      <h3>Muslim Student Association at SJSU</h3>
+      <h1><em>In the Name of Allah,The Most Gracious;The Most Merciful,</em></h1>
+      <p>
+        As Salamu Alaykum, And Peace Be Upon You!<br>The MSA of San Jose State University is dedicated to building an awesome environment of brotherhood and sisterhood on campus through social, religious, interfaith educational and outreach events.<br>Our goal is to promote the true, balanced message of Islam within ourselves and to the general public by being the best possible Muslims we can be in terms of our manners, morale characters, and worship. We hope to achieve this inshallah through following the Qur’an and example of the Prophet Muhammad (peace be upon him)<br>Wasalamu Alaikum,<br>MSA, SJSU
+
+
+      </p>
+    </div>
+  </div>
+  <!-- Container (TOUR Section) -->
+  <div id="resources" class="container">
+
+    <h3 class="text-center">Resources</h3>
+    <p class="text-center">MSA offers many student services including campus prayer space, spiritual and academic enrichement programs.<br></p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+
+    </div>
+  </div>
+</div>
+
+<!--Container(Events Section)-->
+<div class="bg-1">
+  <div id="events" class="container">
+    <h3 class="text-center">Events</h3>
+    <p class="text-center"><em>Join our special, and weekely events</em></p>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We'd love to hear from you!</em></p>
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p></p> 
+</footer>
+
+<script>
+
+
+  $(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+
+      window.location.hash = hash;
+    });
+  });
+
+  $(".navbar a, footera[href='#contact']").on('click',function(event){
+// Prevent default anchor click behavior
+event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+
+      window.location.hash = hash;
+    });
+  });
+
+})
+</script>
+
+</body>
+</html>
