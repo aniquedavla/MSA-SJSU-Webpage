@@ -7,7 +7,7 @@ p  {
 }
 body {
   font: 400 15px/1.8 Lato, sans-serif;
-  color: #fff;
+  color: #FFFFFF;
 }
 h1{
   font-family: Georgia;
@@ -18,7 +18,7 @@ h1{
 }
 h3, h4 {
   margin: 10px 0 30px 0;
-  letter-spacing: 10px;      
+  letter-spacing: 10px;
   font-size: 20px;
   color: #111;
 }
@@ -38,10 +38,10 @@ h3, h4 {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
   }
 }
-.carousel.fixed-section {
+/*.carousel.fixed-section {
   position: relative;
   top: 0;
-}
+}*/
 .bg-1 {
   background: #2d2d30;
   color: #bdbdbd;
@@ -87,40 +87,39 @@ h3, h4 {
   padding: 120px 120px;
 }
 .nav-tabs li a {
-  color: #777;
-}
-.navbar {
-  font-family: Montserrat, sans-serif;
-  margin-bottom: 10;
-  background-color: #2d2d30;
-  border: 0;
-  font-size: 11px !important;
-  letter-spacing: 4px;
-  opacity: 0.9;
-}
-.navbar li a, .navbar .navbar-brand { 
-  color: #777 !important;
-}
-.navbar-nav li a:hover {
-  color: #fff !important;
-}
-.navbar-nav li.active a {
-  color: #fff !important;
-  background-color: #29292c !important;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-}
-.open .dropdown-toggle {
   color: #fff;
-  background-color: #337AB7 !important;
 }
-.dropdown-menu li a {
-  color: #000 !important;
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
 }
-.dropdown-menu li a:hover {
-  background-color: red !important;
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
 }
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
 #contactLogo{
   text-align: center;
   margin: 40px auto;
@@ -136,7 +135,7 @@ footer a {
 footer a:hover {
   color: #777;
   text-decoration: none;
-}  
+}
 .form-control {
   border-radius: 0;
 }
