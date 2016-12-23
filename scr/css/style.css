@@ -1,13 +1,12 @@
-
-p  {
+p{
   font-family: times;
   font-size: 100%;
   text-align: left;
-
 }
+
 body {
   font: 400 15px/1.8 Lato, sans-serif;
-  color: #FFFFFF;
+  color: black;
 }
 h1{
   font-family: Georgia;
@@ -43,8 +42,8 @@ h3, h4 {
   top: 0;
 }*/
 .bg-1 {
-  background: #2d2d30;
-  color: #bdbdbd;
+  background: yellow;
+  color: black;
 }
 .bg-1 h3 {color: #fff;}
 .bg-1 p {font-style: italic;}
@@ -91,23 +90,37 @@ h3, h4 {
 }
 /* Add a dark background color with a little bit see-through */
 .navbar {
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity:0.9;
+  border-top-left-radius: 0;
+  margin-bottom: 0;
+  background-color: yellow;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity:0.9;
 }
 
 /* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+.navbar li a, .navbar{
+    color: black !important;
+}
+.navbar-brand {
+  border-top-left-radius: 0;
+  margin-left: 0;
+  margin-top:0;
+  text-align: center;
+  color: black !important;
+}
+/* On hover, the links will turn black */
+.navbar-brand .img-square:hover {
+  border-radius: 10;
+  color: black !important;
+  background-color: black !important;
+}
+/* On hover, the links will turn black */
+.navbar-nav li a:hover {
+  color: gray !important;
 }
 
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
 
 /* The active link */
 .navbar-nav li.active a {
@@ -119,18 +132,24 @@ h3, h4 {
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
+.img-circular{
+  border-radius: 50%;
+}
+.img-square{
+  background-position: 50%;
+}
 
 #contactLogo{
   text-align: center;
   margin: 40px auto;
 }
 footer {
-  background-color: #2d2d30;
-  color: #f5f5f5;
+  background-color: yellow;
+  color: black;
   padding: 32px;
 }
 footer a {
-  color: #f5f5f5;
+  color: black;
 }
 footer a:hover {
   color: #777;
